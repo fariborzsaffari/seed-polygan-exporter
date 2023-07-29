@@ -1,6 +1,6 @@
 version: '3'
 services:
-  bsc_exporter:
+  matic_exporter:
     build: .
     ports:
       - "5002:5002"
