@@ -1,0 +1,11 @@
+version: '3'
+services:
+  bsc_exporter:
+    build: .
+    ports:
+      - "5002:5002"
+      - "8016:8016"
+    environment:
+      - BSC_SCAN_API_KEY=your_api_key
+      - WALLET_ADDRESS=your_wallet_address
+    restart: always
